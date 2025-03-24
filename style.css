@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Quicksand';
+    background-color: #1e1e1e;
+}
+
+/*nav button*/
+#nav-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    left: calc(50% - 75px);
+    top: -75px;
+    position: fixed;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(255, 174, 0);
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+#nav-button svg{
+    height: 30px;
+    width: 30px;
+}
+
+/*container and content*/
+.container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffeee;
+    padding-top: 75px;
+    overflow: hidden;
+}
+#left , #right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .5s ease all;
+    width: 50%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.left{
+    transform: translateX(50%);
+}
+.right{
+    transform: translateX(-50%);
+}
+.content h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-align: justify; */
+    margin:20px auto;
+    padding: 30px;
+    background-color: #eeeeee;
+    border-radius: 1rem;
+}
+.article h2{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.article img{
+    margin: 30px 0px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+/*nav bar*/
+nav{
+    position: fixed;
+    width: 300px;
+    height: 400px;
+    top: calc( 50% - 200px);
+    left: calc(50% - 150px);
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease all;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #1e1e1e;
+    text-transform: uppercase;
+    font-size: 15pt;
+}
+ul li a:hover{
+    color: rgb(255, 174, 0);
+}
