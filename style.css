@@ -7,6 +7,7 @@
 body{
     font-family:'Quicksand';
     background-color: #1e1e1e;
+    overflow-x: hidden;
 }
 
 /*nav button*/
@@ -35,12 +36,13 @@ body{
 .container{
     position: relative;
     display: flex;
-    width: 100%;
+    width: 200vw;
     justify-content: center;
     align-items: center;
     background-color: #fffeee;
-    padding-top: 75px;
+    padding-top: 100px;
     overflow: hidden;
+    transform: translateX(-50vw);
 }
 #left , #right{
     display: flex;
@@ -48,13 +50,14 @@ body{
     align-items: center;
     overflow: hidden;
     transition: .5s ease all;
-    width: 50%;
+}
+#left{
+    transform: translateX(2px);
 }
 .content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 
 .left{
@@ -63,6 +66,8 @@ body{
 .right{
     transform: translateX(-50%);
 }
+
+
 .content h1{
     text-transform: uppercase;
     text-align: center;
@@ -77,6 +82,7 @@ body{
     padding: 30px;
     background-color: #eeeeee;
     border-radius: 1rem;
+    width: 80vw;
 }
 .article h2{
     text-transform: capitalize;
