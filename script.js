@@ -4,7 +4,6 @@ const right = document.getElementById('right');
 const nav = document.querySelector('nav');
 let is_open = false;
 
-
 nav_btn.addEventListener('click',function(){
     if(!is_open){
         nav_btn.style.transform = "rotateZ(180deg)";
@@ -27,11 +26,4 @@ function join_it(){
     nav.style.opacity = "0";
     left.style.transform = "none";
     right.style.transform = "none";
-
 }
-
-
-window.addEventListener('resize',function(){
-    if(this.window.innerWidth % 2 == 0 ){
-    }
-});
