@@ -39,7 +39,7 @@ Clicking the nav button splits the screen content into two halves (left and righ
 
 1. Clone the repo:
     ```bash
-    git clone https://github.com/your-username/divider-nav-menu.git
+    git clone https://github.com/hassanhajizadeh/dividerNav.git
     ```
 2. Open the project folder in **VS Code** (or your preferred editor).
 3. Use an extension like **Live Server** to run `index.html` locally:
