@@ -28,6 +28,10 @@ html , body{
     transition: .3s ease all;
 }
 
+#nav-button:active{
+    outline: none;
+}
+
 #nav-button svg{
     height: 30px;
     width: 30px;
@@ -133,6 +137,9 @@ ul li a:hover{
 
 
 @media only screen and (max-width : 600px) {
+    *{
+        -webkit-tap-highlight-color: transparent;
+    }
     #nav-button{
         left: calc(50vw - 50px);
         top: -50px;
